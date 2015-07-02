@@ -28,12 +28,15 @@
         "symfony/dependency-injection": "~2.1",
         "symfony/framework-bundle":     "~2.1",
         "symfony/security":             "~2.1",
-        "twig/twig":                    "~1.13"
+        "twig/twig":                    "~1.13",
+        "illuminate/contracts":         ">=5.0.0"
     },
     "suggest": {
-        "pimple/pimple":    "Needed for use with PimpleFactory",
-        "symfony/security": "Needed for using SecurityAwareStateMachine",
-        "symfony/yaml":     "Yaml allows you to define your State graph in YAML"
+        "pimple/pimple":        "Needed for use with PimpleFactory",
+        "symfony/security":     "Needed for using SecurityAwareStateMachine",
+        "symfony/yaml":         "Yaml allows you to define your State graph in YAML",
+        "illuminate/container": "Needed for use with LaravelServiceContainerFactory",
+        "illuminate/contracts": "Needed for use with LaravelServiceContainerFactory"
     },
     "autoload": {
         "psr-0": { "Finite": "src/" }
